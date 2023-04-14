@@ -1,7 +1,7 @@
 <script setup lang='ts'>
-import { computed } from 'vue'
+// import { computed } from 'vue'
 import { NAvatar } from 'naive-ui'
-import { useUserStore } from '@/store'
+// import { useUserStore } from '@/store'
 import defaultAvatar from '@/assets/avatar.jpg'
 import { isString } from '@/utils/is'
 import type { AIInfo, AIState } from '@/store/modules/user/helper'
