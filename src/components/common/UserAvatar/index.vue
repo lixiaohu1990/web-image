@@ -1,18 +1,10 @@
 <script setup lang='ts'>
-// import { computed } from 'vue'
 import { NAvatar } from 'naive-ui'
-// import { useUserStore } from '@/store'
 import defaultAvatar from '@/assets/avatar.jpg'
 import { isString } from '@/utils/is'
-import type { AIInfo, AIState } from '@/store/modules/user/helper'
 import { defaultAISetting } from '@/store/modules/user/helper'
 
-const aiState = defaultAISetting()
-const aiInfo = aiState.AIInfo
-
-// const userStore = useUserStore()
-
-// const userInfo = computed(() => userStore.userInfo)
+const aiInfo = defaultAISetting().AIInfo
 </script>
 
 <template>
