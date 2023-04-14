@@ -4,7 +4,7 @@ import { NAvatar } from 'naive-ui'
 import { useUserStore } from '@/store'
 import defaultAvatar from '@/assets/avatar.jpg'
 import { isString } from '@/utils/is'
-import { defaultAISetting, AIState } from './helper'
+import { defaultAISetting, AIState } from '@/store/modules/user/helper'
 
 const aiInfo = defaultAISetting().AIInfo
 
