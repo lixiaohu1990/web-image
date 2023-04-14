@@ -546,7 +546,7 @@ onUnmounted(() => {
               />
             </template>
           </NAutoComplete>
-          <NButton type="primary" :disabled="buttonDisabled" @click="handleSubmit" style="background-color: #EAAD55;">
+          <NButton type="primary" :disabled="buttonDisabled" @click="handleSubmit">
             <template #icon>
               <span class="dark:text-black">
                 <SvgIcon icon="ri:send-plane-fill" />
@@ -563,9 +563,4 @@ onUnmounted(() => {
 #scrollRef {
   background-color: #F6F6F6;
 }
-
-:root {
-    --n-border-hover: 1px solid #eaad55;
-    --n-border-focus: 1px solid #eaad55;
-  }
 </style>
