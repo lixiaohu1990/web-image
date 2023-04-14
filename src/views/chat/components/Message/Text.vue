@@ -49,7 +49,7 @@ const wrapClass = computed(() => {
     'border',
     'border-solid',
     'border-[1px]',
-    'border-gray-300',
+    props.inversion ? 'border-[#EAAD55]' : 'border-[#3EA467]',
     'dark:border-gray-600'
   ]
 })

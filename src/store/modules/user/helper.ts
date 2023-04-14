@@ -17,7 +17,7 @@ export function defaultSetting(): UserState {
     userInfo: {
       avatar: 'https://duckgpt-1256187161.cos.ap-nanjing.myqcloud.com/avatar.jpg',
       name: '小黄鸭AI助手',
-      description: '加入交流群 <a href="https://duckgpt-1256187161.cos.ap-nanjing.myqcloud.com/group.jpg" class="text-blue-500" target="_blank" >Github</a>',
+      description: '如果遇到问题欢迎 <a href="https://duckgpt-1256187161.cos.ap-nanjing.myqcloud.com/aboutMe.html" class="text-blue-500" target="_blank" >加入交流群</a>',
     },
   }
 }
