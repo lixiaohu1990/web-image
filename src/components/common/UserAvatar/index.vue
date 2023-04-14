@@ -4,20 +4,23 @@ import { NAvatar } from 'naive-ui'
 import { useUserStore } from '@/store'
 import defaultAvatar from '@/assets/avatar.jpg'
 import { isString } from '@/utils/is'
+import { defaultAISetting, AIState } from './helper'
 
-const userStore = useUserStore()
+const aiInfo = defaultAISetting().AIInfo
 
-const userInfo = computed(() => userStore.userInfo)
+// const userStore = useUserStore()
+
+// const userInfo = computed(() => userStore.userInfo)
 </script>
 
 <template>
   <div class="flex items-center overflow-hidden">
     <div class="w-10 h-10 overflow-hidden rounded-full shrink-0">
-      <template v-if="isString(userInfo.avatar) && userInfo.avatar.length > 0">
+      <template v-if="isString(aiInfo.avatar) && aiInfo.avatar.length > 0">
         <NAvatar
           size="large"
           round
-          :src="userInfo.avatar"
+          :src="aiInfo.avatar"
           :fallback-src="defaultAvatar"
         />
       </template>
@@ -27,12 +30,12 @@ const userInfo = computed(() => userStore.userInfo)
     </div>
     <div class="flex-1 min-w-0 ml-2">
       <h2 class="overflow-hidden font-bold text-md text-ellipsis whitespace-nowrap">
-        {{ userInfo.name ?? 'ChenZhaoYu' }}
+        {{ aiInfo.name ?? 'duckGpt' }}
       </h2>
       <p class="overflow-hidden text-xs text-gray-500 text-ellipsis whitespace-nowrap">
         <span
-          v-if="isString(userInfo.description) && userInfo.description !== ''"
-          v-html="userInfo.description"
+          v-if="isString(aiInfo.description) && aiInfo.description !== ''"
+          v-html="aiInfo.description"
         />
       </p>
     </div>
