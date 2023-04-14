@@ -7,7 +7,8 @@ import { isString } from '@/utils/is'
 import type { AIInfo, AIState } from '@/store/modules/user/helper'
 import { defaultAISetting } from '@/store/modules/user/helper'
 
-const aiInfo = defaultAISetting().AIInfo
+const aiState = defaultAISetting()
+const aiInfo = aiState.AIInfo
 
 // const userStore = useUserStore()
 
