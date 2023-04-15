@@ -28,7 +28,7 @@ export default {
     unauthorizedTips: '未经授权，请先进行验证。',
   },
   chat: {
-    newChatButton: '新建聊天',
+    newChatButton: '随便聊天',
     placeholder: '来说点什么吧...（Shift + Enter = 换行，"/" 触发提示词）',
     placeholderMobile: '来说点什么...',
     copy: '复制',
@@ -74,7 +74,7 @@ export default {
     monthlyUsage: '本月使用量',
   },
   store: {
-    siderButton: '私人助理',
+    siderButton: '提示词库',
     local: '本地',
     online: '在线',
     title: '标题',

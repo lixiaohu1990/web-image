@@ -393,7 +393,7 @@ const dataSource = computed(() => {
             </NListItem>
           </NList>
         </NTabPane>
-        <NTabPane name="download" :tab="$t('store.online')">
+        <!-- <NTabPane name="download" :tab="$t('store.online')">
           <p class="mb-4">
             {{ $t('store.onlineImportWarning') }}
           </p>
@@ -440,7 +440,7 @@ const dataSource = computed(() => {
               </template>
             </NCard>
           </div>
-        </NTabPane>
+        </NTabPane> -->
       </NTabs>
     </div>
   </NModal>
