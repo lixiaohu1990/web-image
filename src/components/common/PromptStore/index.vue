@@ -2,9 +2,9 @@
 import type { DataTableColumns } from 'naive-ui'
 import { computed, h, ref, watch } from 'vue'
 // import { NButton, NCard, NDataTable, NDivider, NInput, NList, NListItem, NModal, NPopconfirm, NSpace, NTabPane, NTabs, NThing, useMessage } from 'naive-ui'
-import { NButton, NCard, NDataTable, NInput, NList, NListItem, NModal, NPopconfirm, NSpace, NTabPane, NTabs, NThing, useMessage } from 'naive-ui'
+import { NButton, NDataTable, NInput, NList, NListItem, NModal, NPopconfirm, NSpace, NTabPane, NTabs, NThing, useMessage } from 'naive-ui'
 
-import PromptRecommend from '../../../assets/recommend.json'
+// import PromptRecommend from '../../../assets/recommend.json'
 // import { SvgIcon } from '..'
 import { usePromptStore } from '@/store'
 import { useBasicLayout } from '@/hooks/useBasicLayout'
@@ -38,7 +38,7 @@ const show = computed({
 
 const showModal = ref(false)
 
-const importLoading = ref(false)
+// const importLoading = ref(false)
 const exportLoading = ref(false)
 
 const searchValue = ref<string>('')
