@@ -79,6 +79,13 @@ watch(
         <div class="flex-1 min-h-0 pb-4 overflow-hidden">
           <List />
         </div>
+        <div>
+          <img
+  src="https://duckgpt-1256187161.cos.ap-nanjing.myqcloud.com/new_group.JPG"
+  alt="欢迎进群一起交流"
+  style="display: block; cursor: pointer; width: 100%;"
+/>
+        </div>
         <div class="p-4">
           <NButton block @click="show = true">
             {{ $t('store.siderButton') }}
